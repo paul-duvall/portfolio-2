@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+/* Font-size set to 62.5% because that is the result of 10/16 (set to 10 pixels, meaning 1rem = 10px */
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, #83D8EA, #F0E690);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); }

@@ -1,0 +1,10 @@
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+    to right bottom,
+    $colour-primary,
+    $colour-secondary
+  );
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}

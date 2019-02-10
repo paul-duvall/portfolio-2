@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-2",
+  "version": "1.0.0",
+  "description": "Version 2 of personal portfolio",
+  "main": "index.html",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Paul Duvall",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
