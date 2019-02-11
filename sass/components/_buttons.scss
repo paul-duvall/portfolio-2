@@ -1,0 +1,20 @@
+.btn {
+  border-radius: 1.2rem;
+  box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.16);
+  height: 3rem;
+  padding: 1.5rem 3rem;
+  place-self: center;
+
+  &:link,
+  &:visited {
+      text-decoration: none; 
+    }
+
+  &:hover {
+    background-color: darken($colour-highlight, 10%);
+  }
+
+  &--green {
+    background-color: $colour-highlight;
+  }
+}

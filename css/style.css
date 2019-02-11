@@ -12,8 +12,85 @@ html {
 body {
   box-sizing: border-box; }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  color: #2F4858; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500; }
+
+h2 {
+  font-size: 3.5rem; }
+
+.btn {
+  border-radius: 1.2rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.16);
+  height: 3rem;
+  padding: 1.5rem 3rem;
+  place-self: center; }
+  .btn:link, .btn:visited {
+    text-decoration: none; }
+  .btn:hover {
+    background-color: #8cfe4a; }
+  .btn--green {
+    background-color: #ACFE7D; }
+
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, #83D8EA, #F0E690);
+  min-height: 700px;
+  background-image: linear-gradient(to left top, #83D8EA, #F0E690);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); }
+  display: grid;
+  padding: 20px;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.16);
+  grid-template-columns: 50% 5rem repeat(3, 1fr);
+  grid-template-rows: 1fr 70% repeat(3, 1fr);
+  grid-gap: 10px; }
+  .header__text {
+    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr 50% 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 2 / 3; }
+    .header__text--subtitle-top {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2; }
+    .header__text--name-text {
+      text-align: center;
+      font-weight: 300;
+      font-size: 7rem;
+      grid-column: 2 / 4;
+      grid-row: 2 / 3; }
+    .header__text--name-first {
+      display: flex; }
+    .header__text--name-second {
+      display: flex; }
+    .header__text--name-letter {
+      text-align: center;
+      padding: .7rem 1rem;
+      margin: .2rem; }
+    .header__text--name-letter1, .header__text--name-letter3, .header__text--name-letter5, .header__text--name-letter9 {
+      background: #83D8EA; }
+    .header__text--name-letter2, .header__text--name-letter7, .header__text--name-letter10 {
+      background: #F0E690; }
+    .header__text--name-letter4, .header__text--name-letter6, .header__text--name-letter8 {
+      background: #ACFE7D; }
+    .header__text--subtitle-bottom {
+      text-align: right;
+      grid-row: 3 / 4;
+      grid-column: 3 / 5; }
+  .header__image {
+    grid-column: 3 / 6;
+    grid-row: 1 / 4;
+    place-self: center; }
+    .header__image img {
+      height: 45rem; }
+  .header__btn-contact {
+    grid-column: 3 / 5;
+    grid-row: 3 / 4; }
+  .header__btn-cv {
+    grid-column: 4 / 6;
+    grid-row: 4 / 5; }
