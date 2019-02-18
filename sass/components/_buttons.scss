@@ -1,10 +1,12 @@
 .btn {
   border-radius: 1.2rem;
   box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.16);
+  color: $colour-dark;
   height: 3rem;
   padding: 1.5rem 3rem;
   padding-bottom: 30px;
   place-self: center;
+  transition: all 0.2s;
 
   &:link,
   &:visited {
@@ -13,9 +15,14 @@
 
   &:hover {
     background-color: darken($colour-highlight, 10%);
+    box-shadow: 0 .25rem 1rem rgba($color-black, 0.16);
   }
 
   &--green {
     background-color: $colour-highlight;
+  }
+
+  &:active {
+    transform: translateY(0.25rem);
   }
 }
