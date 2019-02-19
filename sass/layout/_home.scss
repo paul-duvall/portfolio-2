@@ -6,24 +6,41 @@
   }
 
   &__text {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;  
+    
+    &--subtitle-top,
+    &--subtitle-bottom {
+      max-width: 80%;
+    }
 
     &--name-text {
-      border: 1px solid green;
       width: 90%;
     }
+
+    &--name-first {
+      display: grid;
+      grid-template-columns: 1fr repeat(6, 1fr) 1fr;
+      padding-top: 15px;
+      padding-bottom: 25px;
+    }
+
+    &--name-second {
+      display: grid;
+      grid-template-columns: 1fr repeat(6, 1fr) 1fr;
+      padding-bottom: 15px;
+    }
+
+    &--name-letter1 {grid-column: 3 / 4;}
+    &--name-letter5 {grid-column: 2 / 3;}
   }
 
   &__buttons {
-    // border: 1px solid blue;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: center;
   }
-
 }
 
 

@@ -6,26 +6,19 @@
   );
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-  height: 100vh;
+  height: 75rem;
 }
 
 .header {  
   &__text {
+    &--subtitle-top,
+    &--subtitle-bottom {
+      text-align: center;
+    }
+    
     &--name-text {
       font-weight: 300;
       font-size: 7rem;
-    }
-
-    &--name-first {
-      // display: flex;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-    &--name-second {
-      // display: flex;
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
     }
 
     &--name-letter {
@@ -33,7 +26,7 @@
       padding: .2rem .5rem;
       margin: .2rem;
       font-size: 3rem;
-      max-width: 50px;
+      // max-width: 50px;
     }
 
     &--name-letter1 {
