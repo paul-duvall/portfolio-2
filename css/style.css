@@ -23,7 +23,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500; }
 
 h2 {
-  font-size: 2.8rem; }
+  font-size: 5.8rem; }
+
+@media only screen and (max-width: 700px) {
+  h2 {
+    font-size: 2.6rem; } }
+
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+  h2 {
+    font-size: 3.3rem; } }
 
 .btn {
   border-radius: 1.2rem;
@@ -53,18 +61,17 @@ h2 {
   flex-direction: column;
   align-items: center; }
   .header__text--subtitle-top, .header__text--subtitle-bottom {
-    max-width: 80%; }
+    max-width: 80%;
+    padding: 1.5rem; }
   .header__text--name-text {
     width: 90%; }
   .header__text--name-first {
     display: grid;
     grid-template-columns: 1fr repeat(6, 1fr) 1fr;
-    padding-top: 15px;
     padding-bottom: 25px; }
   .header__text--name-second {
     display: grid;
-    grid-template-columns: 1fr repeat(6, 1fr) 1fr;
-    padding-bottom: 15px; }
+    grid-template-columns: 1fr repeat(6, 1fr) 1fr; }
   .header__text--name-letter1 {
     grid-column: 3 / 4; }
   .header__text--name-letter5 {
@@ -75,18 +82,30 @@ h2 {
   flex-direction: column;
   align-items: center; }
 
+@media only screen and (min-width: 700px) {
+  .header {
+    display: grid;
+    grid-template-columns: 50% 5rem 1fr 1fr;
+    grid-template-rows: 5rem 55% repeat(2, 1fr);
+    grid-gap: 10px; }
+    .header__image {
+      grid-column: 2 / 5;
+      grid-row: 2 / 4; }
+    .header__text {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3; }
+    .header__buttons {
+      grid-column: 3 / 5;
+      grid-row: 3 / 4; } }
+
 .container {
   background-image: linear-gradient(to left top, #83D8EA, #F0E690);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-  height: 75rem; }
+  height: 85rem; }
 
 .header__text--subtitle-top, .header__text--subtitle-bottom {
   text-align: center; }
-
-.header__text--name-text {
-  font-weight: 300;
-  font-size: 7rem; }
 
 .header__text--name-letter {
   text-align: center;
@@ -166,3 +185,15 @@ h2 {
 
 .header__image img {
   height: 23rem; }
+
+@media only screen and (min-width: 700px) {
+  .header__text--name-letter {
+    font-size: 8rem; }
+  .header__image img {
+    height: 28rem; } }
+
+@media only screen and (min-width: 1200px) {
+  .header__text--name-letter {
+    font-size: 8rem; }
+  .header__image img {
+    height: 45rem; } }

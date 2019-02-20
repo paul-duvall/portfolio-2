@@ -13,6 +13,7 @@
     &--subtitle-top,
     &--subtitle-bottom {
       max-width: 80%;
+      padding: 1.5rem;
     }
 
     &--name-text {
@@ -22,14 +23,14 @@
     &--name-first {
       display: grid;
       grid-template-columns: 1fr repeat(6, 1fr) 1fr;
-      padding-top: 15px;
+      // padding-top: 15px;
       padding-bottom: 25px;
     }
 
     &--name-second {
       display: grid;
       grid-template-columns: 1fr repeat(6, 1fr) 1fr;
-      padding-bottom: 15px;
+      // padding-bottom: 15px;
     }
 
     &--name-letter1 {grid-column: 3 / 4;}
@@ -43,6 +44,35 @@
   }
 }
 
+@media only screen and (min-width: 700px) {
+  .header {
+    display: grid;
+    grid-template-columns: 50% 5rem 1fr 1fr;
+    grid-template-rows: 5rem 55% repeat(2, 1fr);
+    grid-gap: 10px;
+
+    &__image {
+      grid-column: 2 / 5;
+      grid-row: 2 / 4;
+    }
+
+    &__text {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+
+    &__buttons {
+      grid-column: 3 / 5;
+      grid-row: 3 / 4;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  // .header__text {
+  //   border: 1px solid red;
+  // }
+}
 
 // .container {
 //   display: flex;
@@ -91,86 +121,6 @@
 //       text-align: center;
 //       padding: .7rem 1rem;
 //       margin: .2rem;
-//     }
-
-//     &--name-letter1 {
-//       transform: rotate(20deg);
-//       background:$colour-primary;
-//       transition: ease 0.3s;
-
-//       &:hover {transform: rotate(-10deg) scale(1.3);}
-//     }
-
-//     &--name-letter2 {
-//       transform: rotate(-12deg);
-//       background: $colour-secondary;
-//       transition: ease 0.3s;
-
-//       &:hover {transform: rotate(20deg) scale(0.8);}
-//     }
-
-//     &--name-letter3 {
-//       transform: rotate(10deg);
-//       background:$colour-primary;
-//       transition: ease 0.3s;
-
-//       &:hover {transform: rotate(-5deg) scale(1.7);}
-//     }
-
-//     &--name-letter4 {
-//       transform: rotate(-10deg);
-//       background: $colour-highlight;
-//       transition: ease 0.3s;
-
-//       &:hover {transform: rotate(35deg) scale(1.1);}
-//     }
-
-//     &--name-letter5 {
-//       transform: rotate(5deg);
-//       background:$colour-primary;
-//       transition: ease 0.3s;
-
-//       &:hover {transform: rotate(25deg) scale(0.8);}
-//     }
-
-//     &--name-letter6 {
-//       transform: rotate(-5deg);
-//       background: $colour-highlight;
-//       transition: ease 0.3s;
-
-//       &:hover {transform: rotate(-15deg) scale(1.6);}
-//     }
-
-//     &--name-letter7 {
-//       transform: rotate(5deg);
-//       background: $colour-secondary;
-//       transition: ease 0.3s;
-
-//       &:hover {transform: rotate(20deg) scale(1.5);}
-//     }
-
-//     &--name-letter8 {
-//       transform: rotate(-15deg);
-//       background: $colour-highlight;
-//       transition: ease 0.3s;
-
-//       &:hover {transform: rotate(40deg) scale(0.6);}
-//     }
-
-//     &--name-letter9 {
-//       transform: rotate(10deg);
-//       background:$colour-primary;
-//       transition: ease 0.3s;
-
-//       &:hover {transform: rotate(-10deg) scale(2);}
-//     }
-
-//     &--name-letter10 {
-//       transform: rotate(-5deg);
-//       background: $colour-secondary;
-//       transition: ease 0.3s;
-
-//       &:hover {transform: rotate(40deg) scale(1.3);}
 //     }
 
 //     &--subtitle-bottom {

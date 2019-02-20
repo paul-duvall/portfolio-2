@@ -6,7 +6,7 @@
   );
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-  height: 75rem;
+  height: 85rem;
 }
 
 .header {  
@@ -15,18 +15,12 @@
     &--subtitle-bottom {
       text-align: center;
     }
-    
-    &--name-text {
-      font-weight: 300;
-      font-size: 7rem;
-    }
 
     &--name-letter {
       text-align: center;
       padding: .2rem .5rem;
       margin: .2rem;
       font-size: 3rem;
-      // max-width: 50px;
     }
 
     &--name-letter1 {
@@ -113,6 +107,39 @@
   &__image { 
     img {
       height: 23rem;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 700px) {
+  .header {    
+    &__text {
+      &--name-letter {
+        font-size: 8rem;
+      }
+    }
+
+    &__image { 
+      img {
+        height: 28rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header {    
+    &__text {
+      &--name-letter {
+        font-size: 8rem;
+      }
+    }
+
+    &__image { 
+      img {
+        height: 45rem;
+      }
     }
   }
 }
