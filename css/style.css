@@ -138,13 +138,10 @@ p {
   align-items: center;
   max-width: 110rem; }
   .skills__container {
-    margin-top: -20rem;
-    padding-top: 20rem;
-    position: relative;
+    padding-top: 15rem;
     display: flex;
     justify-content: center;
-    width: 100%;
-    z-index: -1; }
+    width: 100%; }
 
 @media only screen and (min-width: 700px) {
   .header {
@@ -164,10 +161,23 @@ p {
   .intro {
     margin: 1.8rem; } }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 800px) {
   .header__buttons {
     grid-column: 3 / 5;
-    grid-row: 4 / 5; } }
+    grid-row: 4 / 5; }
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 110rem; }
+    .skills__container {
+      margin-top: -27rem;
+      padding-top: 27rem;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      z-index: -1; } }
 
 .header__container {
   background-image: linear-gradient(to left top, #83D8EA, #F0E690);
@@ -259,9 +269,9 @@ p {
 
 .skills__container {
   background-image: linear-gradient(to left top, #83D8EA, #F0E690);
-  -webkit-clip-path: polygon(0 17%, 100% 0, 100% 100%, 0 83%);
-  clip-path: polygon(0 17%, 100% 0, 100% 100%, 0 83%);
-  height: 150rem; }
+  -webkit-clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 94%);
+  clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 94%);
+  height: 157rem; }
 
 @media only screen and (min-width: 700px) {
   .header__text--name-letter {
@@ -283,4 +293,8 @@ p {
   .header__text--name-letter {
     font-size: 8rem; }
   .header__image img {
-    height: 45rem; } }
+    height: 45rem; }
+  .skills__container {
+    -webkit-clip-path: polygon(0 16%, 100% 5%, 100% 100%, 0 90%);
+    clip-path: polygon(0 16%, 100% 5%, 100% 100%, 0 90%);
+    height: 92rem; } }
