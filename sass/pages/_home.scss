@@ -112,7 +112,6 @@
 }
 
 .skills {
-
   &__container {
     background-image: linear-gradient(
       to left top,
@@ -121,11 +120,8 @@
     );
     -webkit-clip-path: polygon(0 17%, 100% 0, 100% 100%, 0 83%);
     clip-path: polygon(0 17%, 100% 0, 100% 100%, 0 83%);
-    height: 85rem;
-    margin-top: -20rem;
-    padding-top: 20rem;
-    z-index: -1;
-    position: relative;
+    // height: 85rem;
+    height: 150rem;
   }
 }
 

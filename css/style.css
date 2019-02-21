@@ -54,14 +54,43 @@ p {
   .btn:active {
     transform: translateY(0.25rem); }
 
-.cards {
-  margin: auto 0; }
+.info-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%; }
 
-.card {
-  border: 1px solid blue;
+.info-card {
   margin: 3rem;
   width: 300px;
-  background: white; }
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative; }
+  .info-card h3 {
+    padding-top: 5.5rem; }
+  .info-card p {
+    font-size: 1.6rem;
+    line-height: 2.4rem; }
+  .info-card__image {
+    border-radius: 100%;
+    border: 1px solid white;
+    background-image: linear-gradient(to right bottom, #83D8EA, #F0E690);
+    display: flex;
+    height: 11rem;
+    justify-content: center;
+    position: absolute;
+    right: 8.75rem;
+    top: -5rem;
+    width: 11rem; }
+    .info-card__image img {
+      width: 6rem; }
+
+@media only screen and (min-width: 1000px) {
+  .info-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center; } }
 
 .owl-icon--image {
   height: 4.5rem; }
@@ -103,8 +132,19 @@ p {
 .intro {
   margin: 1.8rem; }
 
-.skills__container {
-  width: 100%; }
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 110rem; }
+  .skills__container {
+    margin-top: -20rem;
+    padding-top: 20rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: -1; }
 
 @media only screen and (min-width: 700px) {
   .header {
@@ -221,11 +261,7 @@ p {
   background-image: linear-gradient(to left top, #83D8EA, #F0E690);
   -webkit-clip-path: polygon(0 17%, 100% 0, 100% 100%, 0 83%);
   clip-path: polygon(0 17%, 100% 0, 100% 100%, 0 83%);
-  height: 85rem;
-  margin-top: -20rem;
-  padding-top: 20rem;
-  z-index: -1;
-  position: relative; }
+  height: 150rem; }
 
 @media only screen and (min-width: 700px) {
   .header__text--name-letter {
