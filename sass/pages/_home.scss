@@ -1,4 +1,4 @@
-.container {
+.header__container {
   background-image: linear-gradient(
     to left top,
     $colour-primary,
@@ -111,6 +111,20 @@
   }
 }
 
+.skills {
+  &__container {
+    background-image: linear-gradient(
+      to left top,
+      $colour-primary,
+      $colour-secondary
+    );
+    -webkit-clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 94%);
+    clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 94%);
+    height: 157rem;
+  }
+}
+
+
 
 @media only screen and (min-width: 700px) {
   .header {    
@@ -140,6 +154,7 @@
       &--container {
         box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.25);
         padding: 2.5rem;
+        background: white;
       }
     }
   }
@@ -157,6 +172,15 @@
       img {
         height: 45rem;
       }
+    }
+  }
+
+  .skills {
+    &__container {
+      -webkit-clip-path: polygon(0 16%, 100% 5%, 100% 100%, 0 90%);
+      clip-path: polygon(0 16%, 100% 5%, 100% 100%, 0 90%);
+      height:92rem;
+      // height: 150rem;
     }
   }
 }
