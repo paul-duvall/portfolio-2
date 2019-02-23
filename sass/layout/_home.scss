@@ -23,14 +23,12 @@
     &--name-first {
       display: grid;
       grid-template-columns: 1fr repeat(6, 1fr) 1fr;
-      // padding-top: 15px;
       padding-bottom: 25px;
     }
 
     &--name-second {
       display: grid;
       grid-template-columns: 1fr repeat(6, 1fr) 1fr;
-      // padding-bottom: 15px;
     }
 
     &--name-letter1 {grid-column: 3 / 4;}
@@ -48,6 +46,22 @@
   margin: 1.8rem;
 }
 
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 110rem;
+
+  &__container {
+    // margin-top: -27rem;
+    padding-top: 15rem;
+    // position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    // z-index: -1;
+  }
+}
 
 @media only screen and (min-width: 700px) {
   .header {
@@ -77,11 +91,28 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 800px) {
   .header {
     &__buttons {
       grid-column: 3 / 5;
       grid-row: 4 / 5;
+    }
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 110rem;
+  
+    &__container {
+      margin-top: -27rem;
+      padding-top: 27rem;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      z-index: -1;
     }
   }
 }
