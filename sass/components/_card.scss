@@ -18,9 +18,9 @@
   }
 
   p {
-    // font-size: 1.6rem;
-    // line-height: 2.4rem;
-    @include card-text;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    // @include card-text;
   }
 
   &__image {
@@ -39,6 +39,7 @@
     position: absolute;
     top: -5rem;
     width: 11rem;
+
   
     img {
       width: 6rem;
