@@ -240,7 +240,7 @@ p {
   .intro {
     margin: 1.8rem; } }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
   .header__buttons {
     grid-column: 3 / 5;
     grid-row: 4 / 5; }
@@ -350,7 +350,7 @@ p {
   background-image: linear-gradient(to left top, #83D8EA, #F0E690);
   -webkit-clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 94%);
   clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 94%);
-  height: 157rem; }
+  height: 142rem; }
 
 @media only screen and (min-width: 700px) {
   .header__text--name-letter {
@@ -368,7 +368,7 @@ p {
       padding: 2.5rem;
       background: white; } }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1000px) {
   .header__text--name-letter {
     font-size: 8rem; }
   .header__image img {
