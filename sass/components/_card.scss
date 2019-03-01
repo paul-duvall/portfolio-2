@@ -34,10 +34,12 @@
     display: flex;
     height: 11rem;
     justify-content: center;
+    left: 50%;   
+    margin-left: -5.5rem;
     position: absolute;
-    right: 8.75rem;
     top: -5rem;
     width: 11rem;
+
   
     img {
       width: 6rem;
