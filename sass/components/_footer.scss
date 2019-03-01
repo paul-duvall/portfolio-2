@@ -1,0 +1,54 @@
+.footer {
+  background: radial-gradient(rgb(131,216,234), rgb(0,142,182));
+  -webkit-clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem;  
+  color: white;
+
+  &__social {
+    margin-top: 6rem;
+  }
+
+  &__social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__social-btn {
+    margin: 1rem;
+
+    &:link,
+    &:visited {
+      text-decoration: none;
+      background: $colour-secondary;
+      border-radius: 10rem;
+      padding: 1rem;
+      color: rgb(0,142,182);
+    }
+
+    &:hover {
+      background: darken($colour-secondary, 10);
+      transform: scale(1.05);
+    }
+  }
+
+  &__contact-form {
+    border: 1px solid red;
+
+    // Form labels hidden on smaller viewports
+    label {
+      visibility: hidden;
+      font-size: 0;
+    }   
+  }
+}
+
+// Sizing the font-awesome social media icons
+.fab {
+  font-size: 3rem;
+}
+
