@@ -55,7 +55,7 @@ p {
       background-color: #8cfe4a;
       box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.16); }
   .btn--outline {
-    border: 3px solid #ACFE7D;
+    border: 2px solid #ACFE7D;
     color: white;
     padding: 1rem 1.5rem; }
     .btn--outline:hover {
@@ -115,9 +115,6 @@ p {
 .projects__card {
   align-items: center;
   background-color: white;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 10px;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
   display: flex;
@@ -160,6 +157,15 @@ p {
   width: 30rem;
   top: 0;
   transition: all .2s linear; }
+
+@media only screen and (min-width: 1000px) {
+  .projects__cards {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .projects__card {
+    margin: 0 40px; } }
 
 .header__image {
   display: flex;
@@ -205,6 +211,15 @@ p {
     display: flex;
     justify-content: center;
     width: 100%; }
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 110rem; }
+  .projects__container {
+    display: flex;
+    justify-content: center; }
 
 @media only screen and (min-width: 700px) {
   .header {

@@ -1,0 +1,96 @@
+.projects__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+}
+
+.projects {
+  &__card {
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.25);
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    position: relative; 
+    text-align: center;    
+    width: 30rem;
+
+    // Darkens background on hover
+    &:hover .projects__card-overlay {
+      background: rgba(0, 0, 0, 0.5);
+    }
+ 
+    img {
+      width: 300px;
+      transition: all .2s linear;
+    }
+
+    // Increases background image on hover
+    &:hover img {
+      transform: scale(1.1);  
+    }
+    
+    h3 {
+      color: white;
+      // Hides title text prior to hover
+      transform: translateY(-27rem);
+      transition: all .2s linear;
+    }
+
+    // Makes text visible on hover
+    &:hover h3 {
+      transform: translateY(-21rem);
+    }
+
+    p {
+      @include card-text;
+      color: white;
+      transition: all .2s linear;
+      width: 90%;
+    }
+
+    // Makes paragraph visible on hover
+    &:hover p {
+      transform: translateY(-20rem);
+    }
+
+    a {
+      transition: all .2s linear;
+    }
+
+    // Makes button visible on hover
+    &:hover a {
+      transform: translateY(-20rem);
+    }
+  }
+
+  // Positions the overlay over the main card content
+  &__card-overlay {
+    position: absolute;
+    height: 30rem;
+    width: 30rem;
+    top: 0;
+    transition: all .2s linear;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .projects {
+    // Ensures cards sit next to each other on larger viewports
+    &__cards {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    &__card {
+      margin: 0 40px;
+    }
+  }
+}
