@@ -2,26 +2,41 @@
   border-radius: 1.2rem;
   box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.16);
   color: $colour-dark;
-  width: 17rem;
   margin: 1rem;
-  padding: 1.5rem 3rem;
   transition: all 0.2s;
+  width: 17rem;
 
+  // All buttons to have no underline on text
   &:link,
   &:visited {
       text-decoration: none; 
     }
 
-  &:hover {
-    background-color: darken($colour-highlight, 10%);
-    box-shadow: 0 .25rem 1rem rgba($colour-black, 0.16);
-  }
-
-  &--green {
-    background-color: $colour-highlight;
-  }
-
+  // All buttons to move down on click
   &:active {
     transform: translateY(0.25rem);
+  }
+
+  // Green 'call to action' button
+  &--green {
+    background-color: $colour-highlight;
+    padding: 1.5rem 3rem;
+  
+    &:hover {
+      background-color: darken($colour-highlight, 10%);
+      box-shadow: 0 .25rem 1rem rgba($colour-black, 0.16);
+    }
+  }
+
+  // Outline button for secondary use
+  &--outline {
+    border: 2px solid $colour-highlight;
+    color: white;
+    padding: 1rem 1.5rem;
+
+    &:hover {
+      color: $colour-dark;
+      background-color: $colour-highlight;
+    }
   }
 }
