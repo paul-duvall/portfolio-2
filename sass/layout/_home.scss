@@ -1,4 +1,14 @@
 .header {
+  max-width: 120rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
   &__image { 
     display: flex;
     justify-content: center;
@@ -35,10 +45,11 @@
     &--name-letter5 {grid-column: 2 / 3;}
   }
 
-  &__buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  &__btn {
+    height: 5rem;
+    margin: 1rem;
+    text-align: center;
+    width: 20rem;
   }
 }
 
@@ -53,13 +64,10 @@
   max-width: 110rem;
 
   &__container {
-    // margin-top: -27rem;
     padding-top: 15rem;
-    // position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
-    // z-index: -1;
   }
 }
 
@@ -78,12 +86,12 @@
 @media only screen and (min-width: 700px) {
   .header {
     display: grid;
-    grid-template-columns: 50% 5rem 1fr 1fr;
-    grid-template-rows: 5rem 55% repeat(2, 1fr);
+    grid-template-columns: 50% 5rem 1fr 1fr 1fr 1fr;
+    grid-template-rows: 5rem 55% repeat(3, 1fr) 15rem;
     grid-gap: 10px;
 
     &__image {
-      grid-column: 2 / 5;
+      grid-column: 3 / 5;
       grid-row: 2 / 4;
     }
 
@@ -92,9 +100,16 @@
       grid-row: 2 / 3;
     }
 
-    &__buttons {
-      grid-column: 3 / 5;
-      grid-row: 3 / 4;
+    &__btn {
+      &--contact {
+        grid-column: 2 / 5;
+        grid-row: 3 / 4;
+      }
+      
+      &--cv {
+        grid-column: 4 / 6;
+        grid-row: 4 / 5;
+      }
     }
   }
 
@@ -104,13 +119,6 @@
 }
 
 @media only screen and (min-width: 1000px) {
-  .header {
-    &__buttons {
-      grid-column: 3 / 5;
-      grid-row: 4 / 5;
-    }
-  }
-
   .skills {
     display: flex;
     flex-direction: column;
