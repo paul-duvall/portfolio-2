@@ -40,7 +40,9 @@ p {
 
 @media only screen and (min-width: 700px) {
   h2 {
-    font-size: 4rem; } }
+    font-size: 4rem; }
+  h3 {
+    font-size: 3rem; } }
 
 .btn {
   border: none;
@@ -108,18 +110,24 @@ p {
     align-items: center; } }
 
 .footer {
+  align-items: center;
   background: radial-gradient(#83d8ea, #008eb6);
   -webkit-clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  color: white; }
+  padding: 1rem; }
+  .footer__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    max-width: 110rem; }
   .footer__social {
-    margin-top: 7rem;
-    margin-bottom: 2rem; }
+    margin: 7rem 0 2rem 0; }
   .footer__social-icons {
     display: flex;
     flex-direction: row;
@@ -141,6 +149,7 @@ p {
 
 .footer__contact {
   width: 95%;
+  max-width: 40rem;
   padding-bottom: 2.5rem; }
   .footer__contact-form label {
     visibility: hidden;
@@ -153,7 +162,8 @@ p {
     width: 100%;
     margin-bottom: 1rem;
     padding: .5rem;
-    background: #5E5E5D; }
+    background: #5E5E5D;
+    max-width: 40rem; }
   .footer__contact-form input::placeholder,
   .footer__contact-form textarea::placeholder {
     color: white; }
@@ -161,6 +171,20 @@ p {
     font-family: Arial, Helvetica, sans-serif; }
   .footer__contact-btn {
     text-align: right; }
+
+@media only screen and (min-width: 1000px) {
+  .footer {
+    margin-top: 5rem; }
+    .footer__social-text {
+      margin-bottom: 2rem; }
+    .footer__content {
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 5rem; }
+    .footer__contact-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; } }
 
 .owl-icon--image {
   height: 4.5rem; }

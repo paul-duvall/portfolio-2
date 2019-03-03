@@ -1,19 +1,26 @@
 .footer {
+  align-items: center;
   background: radial-gradient(rgb(131,216,234), rgb(0,142,182));
   -webkit-clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-   padding: 1rem;  
-  color: white;
+  padding: 1rem;  
+
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    max-width: 110rem;
+  }
 
   // Social media icons section
-
   &__social {
-    margin-top: 7rem;
-    margin-bottom: 2rem;
+    margin: 7rem 0 2rem 0;
   }
 
   &__social-icons {
@@ -22,6 +29,7 @@
     justify-content: center;
   }
 
+  // Creates circular button
   &__social-btn {
     margin: 1rem;
 
@@ -50,9 +58,11 @@
 
 .footer__contact {
   width: 95%;
+  max-width: 40rem;
   padding-bottom: 2.5rem;
 
   &-form {
+
     // Form labels hidden on smaller viewports
     label {
       visibility: hidden;
@@ -69,6 +79,7 @@
       margin-bottom: 1rem;
       padding: .5rem;
       background: $colour-grey;
+      max-width: 40rem;
     }
 
     // Set form field placeholder text to white
@@ -89,3 +100,27 @@
   }
 }
 
+@media only screen and (min-width: 1000px) {
+  .footer {
+    margin-top: 5rem;
+
+    // Adds space below the social title
+    &__social-text {
+      margin-bottom: 2rem;
+    }
+
+    // Adjusts layout so social and contact sections are in one row
+    &__content {
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 5rem;
+    }
+
+    // Aligns contact title and text to right
+    &__contact-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+}
