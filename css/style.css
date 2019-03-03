@@ -33,24 +33,28 @@ p {
   line-height: 3.5rem;
   letter-spacing: .15rem; }
 
+.small-text {
+  font-size: 1.4rem;
+  letter-spacing: .05rem;
+  line-height: 1.9rem; }
+
 @media only screen and (min-width: 700px) {
   h2 {
     font-size: 4rem; } }
 
 .btn {
+  border: none;
   border-radius: 1.2rem;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.16);
   color: #2F4858;
-  margin: 1rem;
-  transition: all 0.2s;
-  width: 17rem; }
+  transition: all 0.2s; }
   .btn:link, .btn:visited {
     text-decoration: none; }
   .btn:active {
     transform: translateY(0.25rem); }
   .btn--green {
     background-color: #ACFE7D;
-    padding: 1.5rem 3rem; }
+    padding: 1rem 1.5rem; }
     .btn--green:hover {
       background-color: #8cfe4a;
       box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.16); }
@@ -110,10 +114,12 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5rem;
+  align-items: center;
+  padding: 1rem;
   color: white; }
   .footer__social {
-    margin-top: 6rem; }
+    margin-top: 7rem;
+    margin-bottom: 2rem; }
   .footer__social-icons {
     display: flex;
     flex-direction: row;
@@ -129,14 +135,32 @@ p {
     .footer__social-btn:hover {
       background: #eadc63;
       transform: scale(1.05); }
-  .footer__contact-form {
-    border: 1px solid red; }
-    .footer__contact-form label {
-      visibility: hidden;
-      font-size: 0; }
 
 .fab {
   font-size: 3rem; }
+
+.footer__contact {
+  width: 95%;
+  padding-bottom: 2.5rem; }
+  .footer__contact-form label {
+    visibility: hidden;
+    font-size: 0; }
+  .footer__contact-form input:not(:last-child),
+  .footer__contact-form textarea {
+    border: none;
+    border-radius: 6px;
+    color: white;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    background: #5E5E5D; }
+  .footer__contact-form input::placeholder,
+  .footer__contact-form textarea::placeholder {
+    color: white; }
+  .footer__contact-form textarea::placeholder {
+    font-family: Arial, Helvetica, sans-serif; }
+  .footer__contact-btn {
+    text-align: right; }
 
 .owl-icon--image {
   height: 4.5rem; }

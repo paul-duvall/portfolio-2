@@ -5,11 +5,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5rem;  
+  align-items: center;
+   padding: 1rem;  
   color: white;
 
+  // Social media icons section
+
   &__social {
-    margin-top: 6rem;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
   }
 
   &__social-icons {
@@ -35,20 +39,53 @@
       transform: scale(1.05);
     }
   }
-
-  &__contact-form {
-    border: 1px solid red;
-
-    // Form labels hidden on smaller viewports
-    label {
-      visibility: hidden;
-      font-size: 0;
-    }   
-  }
 }
 
 // Sizing the font-awesome social media icons
 .fab {
   font-size: 3rem;
+}
+
+// Contact form section
+
+.footer__contact {
+  width: 95%;
+  padding-bottom: 2.5rem;
+
+  &-form {
+    // Form labels hidden on smaller viewports
+    label {
+      visibility: hidden;
+      font-size: 0;
+    }
+
+    // Form form input fields
+    input:not(:last-child),
+    textarea {
+      border: none;
+      border-radius: 6px;
+      color: white;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: .5rem;
+      background: $colour-grey;
+    }
+
+    // Set form field placeholder text to white
+    input::placeholder,
+    textarea::placeholder {
+      color: white;
+    }
+
+    // Set form textarea field placeholder font
+    textarea::placeholder {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  } 
+
+  // Align the form submit button right
+  &-btn {
+    text-align: right;
+  }
 }
 
