@@ -86,7 +86,7 @@ p {
     padding-top: 5.5rem; }
   .info-card p {
     font-size: 1.4rem;
-    line-height: 2.5rem; }
+    line-height: 2.2rem; }
   .info-card__image {
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25), 0 0 4rem 0px rgba(100, 100, 100, 0.25);
     background-image: linear-gradient(to right bottom, #83D8EA, #F0E690);
@@ -206,7 +206,7 @@ p {
   display: flex;
   flex-direction: column;
   height: 30rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -220,20 +220,21 @@ p {
     transform: scale(1.1); }
   .projects__card h3 {
     color: white;
-    transform: translateY(-27rem);
+    transform: translateY(-32rem);
     transition: all .2s linear; }
   .projects__card:hover h3 {
     transform: translateY(-21rem); }
   .projects__card p {
     font-size: 1.4rem;
-    line-height: 2.5rem;
+    line-height: 2.2rem;
     color: white;
     transition: all .2s linear;
     width: 90%; }
   .projects__card:hover p {
     transform: translateY(-20rem); }
   .projects__card a {
-    transition: all .2s linear; }
+    transition: all .2s linear;
+    margin-top: 1.5rem; }
   .projects__card:hover a {
     transform: translateY(-20rem); }
 
