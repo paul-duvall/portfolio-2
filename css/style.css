@@ -33,24 +33,30 @@ p {
   line-height: 3.5rem;
   letter-spacing: .15rem; }
 
+.small-text {
+  font-size: 1.4rem;
+  letter-spacing: .05rem;
+  line-height: 1.9rem; }
+
 @media only screen and (min-width: 700px) {
   h2 {
-    font-size: 4rem; } }
+    font-size: 4rem; }
+  h3 {
+    font-size: 3rem; } }
 
 .btn {
+  border: none;
   border-radius: 1.2rem;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.16);
   color: #2F4858;
-  margin: 1rem;
-  transition: all 0.2s;
-  width: 17rem; }
+  transition: all 0.2s; }
   .btn:link, .btn:visited {
     text-decoration: none; }
   .btn:active {
     transform: translateY(0.25rem); }
   .btn--green {
     background-color: #ACFE7D;
-    padding: 1.5rem 3rem; }
+    padding: 1rem 1.5rem; }
     .btn--green:hover {
       background-color: #8cfe4a;
       box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.16); }
@@ -80,7 +86,7 @@ p {
     padding-top: 5.5rem; }
   .info-card p {
     font-size: 1.4rem;
-    line-height: 2.5rem; }
+    line-height: 2.2rem; }
   .info-card__image {
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25), 0 0 4rem 0px rgba(100, 100, 100, 0.25);
     background-image: linear-gradient(to right bottom, #83D8EA, #F0E690);
@@ -103,6 +109,83 @@ p {
     flex-direction: row;
     align-items: center; } }
 
+.footer {
+  align-items: center;
+  background: radial-gradient(#83d8ea, #008eb6);
+  -webkit-clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem; }
+  .footer__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    max-width: 110rem; }
+  .footer__social {
+    margin: 7rem 0 2rem 0; }
+  .footer__social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .footer__social-btn {
+    margin: 1rem; }
+    .footer__social-btn:link, .footer__social-btn:visited {
+      text-decoration: none;
+      background: #F0E690;
+      border-radius: 10rem;
+      padding: 1rem;
+      color: #008eb6; }
+    .footer__social-btn:hover {
+      background: #eadc63;
+      transform: scale(1.05); }
+
+.fab {
+  font-size: 3rem; }
+
+.footer__contact {
+  width: 95%;
+  max-width: 40rem;
+  padding-bottom: 2.5rem; }
+  .footer__contact-form label {
+    visibility: hidden;
+    font-size: 0; }
+  .footer__contact-form input:not(:last-child),
+  .footer__contact-form textarea {
+    border: none;
+    border-radius: 6px;
+    color: white;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    background: #5E5E5D;
+    max-width: 40rem; }
+  .footer__contact-form input::placeholder,
+  .footer__contact-form textarea::placeholder {
+    color: white; }
+  .footer__contact-form textarea::placeholder {
+    font-family: Arial, Helvetica, sans-serif; }
+  .footer__contact-btn {
+    text-align: right; }
+
+@media only screen and (min-width: 1000px) {
+  .footer {
+    margin-top: 5rem; }
+    .footer__social-text {
+      margin-bottom: 2rem; }
+    .footer__content {
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 5rem; }
+    .footer__contact-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; } }
+
 .owl-icon--image {
   height: 4.5rem; }
 
@@ -123,7 +206,7 @@ p {
   display: flex;
   flex-direction: column;
   height: 30rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -137,20 +220,21 @@ p {
     transform: scale(1.1); }
   .projects__card h3 {
     color: white;
-    transform: translateY(-27rem);
+    transform: translateY(-32rem);
     transition: all .2s linear; }
   .projects__card:hover h3 {
     transform: translateY(-21rem); }
   .projects__card p {
     font-size: 1.4rem;
-    line-height: 2.5rem;
+    line-height: 2.2rem;
     color: white;
     transition: all .2s linear;
     width: 90%; }
   .projects__card:hover p {
     transform: translateY(-20rem); }
   .projects__card a {
-    transition: all .2s linear; }
+    transition: all .2s linear;
+    margin-top: 1.5rem; }
   .projects__card:hover a {
     transform: translateY(-20rem); }
 

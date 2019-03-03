@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400,500" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -112,13 +113,72 @@
           <img src="./images/project-devlearn.jpg" alt="devLearn project">
           <div class="projects__card-overlay"></div>
           <h3>devLearn</h3>
-          <p>An overly-ambitious web application for users learning web development. Built using Bootstrap and JavaScript.</p>
+          <p>An overly-ambitious web application for users learning web development.</p>
+          <p>Built using Bootstrap and JavaScript.</p>
           <a href="#" class="btn btn--outline">Find out more</a>
         </div>
 
       </div>
     </div>
   </section>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__social">
+        <div class="footer__social-text">
+              <h3>Find me online...</h3>
+        </div>
+        <div class="footer__social-icons">
+            <a href="https://twitter.com/Paul_Duvall" class="footer__social-btn" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://twitter.com/Paul_Duvall" class="footer__social-btn" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://twitter.com/Paul_Duvall" class="footer__social-btn" target="_blank">
+              <i class="fab fa-github-alt"></i>
+            </a>
+        </div>
+      </div>
+  
+      <div class="footer__contact">
+        <div class="footer__contact-text">
+          <h3>Contact</h3>
+          <p class="small-text">Please use the form below to send me a message.</p>
+        </div>
+        <div class="footer__contact-form-container">
+          <form class="footer__contact-form" action="POST" data-netlify="true">
+            <div>
+              <label for="name">Name: </label>
+              <input type="text" name="name" id="name" placeholder="Name" required>
+            </div>
+            <div>
+              <label for="email">Email address: </label>
+              <input type="email" name="email" id="email" placeholder="Email address" required>
+            </div>
+            <div>
+              <label for="phone">Phone number: </label>
+              <input type="number" name="phone" id="phone" placeholder="Phone number">
+            </div>
+            <div>
+              <label for="message">Message: </label>
+              <textarea rows="4" cols="40.5" name="message" id="message" placeholder="Message"></textarea>
+            </div>
+            <div class="footer__contact-btn">
+              <input type="submit" class="btn btn--green" value="Send Request">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="footer__copyright">
+      <p class="small-text">
+        Copyright 2019 Paul Duvall
+      </p>
+    </div>
+  </footer>
   
 </body>
 </html>

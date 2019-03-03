@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     height: 30rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     overflow: hidden;
     position: relative; 
     text-align: center;    
@@ -38,7 +38,7 @@
     h3 {
       color: white;
       // Hides title text prior to hover
-      transform: translateY(-27rem);
+      transform: translateY(-32rem);
       transition: all .2s linear;
     }
 
@@ -61,6 +61,7 @@
 
     a {
       transition: all .2s linear;
+      margin-top: 1.5rem;
     }
 
     // Makes button visible on hover
