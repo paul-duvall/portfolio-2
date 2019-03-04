@@ -19,8 +19,6 @@
   }
 
   p {
-    // font-size: 1.6rem;
-    // line-height: 2.4rem;
     @include card-text;
   }
 
@@ -50,8 +48,10 @@
 
 @media only screen and (min-width: 1000px) {
   .info-cards {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
   }
 }
