@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <div class="nav">
+    <input type="checkbox" class="nav__checkbox" id="navi-toggle">
+    <label for="navi-toggle" class="nav__button">
+      <span class="nav__icon">&nbsp;</span>
+    </label>
+    <div class="nav__background">&nbsp;</div>
+    <nav class="nav__navigation">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#intro" class="nav__link">About me</a>
+        </li>
+        <li class="nav__item">
+          <a href="#skills" class="nav__link">Skills</a>
+        </li>
+        <li class="nav__item">
+          <a href="#projects" class="nav__link">Projects</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contact" class="nav__link">Contact me</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <section class="about-me">
+    <div class="about-me__container">
+      <div class="about-me__left">
+        <h2>About me</h2>
+        <p>My name is Paul Duvall and I'm a professional individual determined to successfully transition into career in web development.</p>
+        <p>Right now, I'm working as a primary school teacher. It's a job that has challenged me to grow in many ways and provided me with opportunities to develop a broad range of skills.</p>
+        <p>I have always had an interest in technology and last year decided to dedicate my time to learning the skills necessary for front-end web development. I believe that these skills, along with my broader professional skills developed during my career as a teacher and my work in a online editorial role in London, will enable me to excel in a web-development environment.</p>
+        <p>If you'd like to know more, please contact me by filling in the form below or take a look at <a href="docs/Paul-Duvall-CV.pdf" target="_blank">my CV</a>.</p>
+      </div>
+      <div class="about-me__right">
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <a name="contact"></a>
+    <div class="footer__content">
+      <div class="footer__social">
+        <div class="footer__social-text">
+              <h3>Find me online...</h3>
+        </div>
+        <div class="footer__social-icons">
+            <a href="https://twitter.com/Paul_Duvall" class="footer__social-btn" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://twitter.com/Paul_Duvall" class="footer__social-btn" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://twitter.com/Paul_Duvall" class="footer__social-btn" target="_blank">
+              <i class="fab fa-github-alt"></i>
+            </a>
+        </div>
+      </div>
+  
+      <div class="footer__contact">
+        <div class="footer__contact-text">
+          <h3>Contact</h3>
+          <p class="small-text">Please use the form below to send me a message.</p>
+        </div>
+        <div class="footer__contact-form-container">
+          <form class="footer__contact-form" action="POST" data-netlify="true">
+            <div>
+              <label for="name">Name: </label>
+              <input type="text" name="name" id="name" placeholder="Name" required>
+            </div>
+            <div>
+              <label for="email">Email address: </label>
+              <input type="email" name="email" id="email" placeholder="Email address" required>
+            </div>
+            <div>
+              <label for="phone">Phone number: </label>
+              <input type="number" name="phone" id="phone" placeholder="Phone number">
+            </div>
+            <div>
+              <label for="message">Message: </label>
+              <textarea rows="4" cols="40.5" name="message" id="message" placeholder="Message"></textarea>
+            </div>
+            <div class="footer__contact-btn">
+              <input type="submit" class="btn btn--green" value="Send Request">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="footer__copyright">
+      <p class="small-text">
+        Copyright 2019 Paul Duvall
+      </p>
+    </div>
+  </footer>
+  
+</body>
+</html>
