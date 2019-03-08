@@ -11,11 +11,32 @@
 </head>
 <body>
   
-  <nav class="nav">
-    <div class="nav__logo">
-      Navigation here!
-    </div>
-  </nav>
+  <div class="nav">
+    <input type="checkbox" class="nav__checkbox" id="navi-toggle">
+    <label for="navi-toggle" class="nav__button">
+      <span class="nav__icon">&nbsp;</span>
+    </label>
+    <div class="nav__background">&nbsp;</div>
+    <nav class="nav__navigation">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="about-me.html" class="nav__link">About me</a>
+        </li>
+        <li class="nav__item">
+          <a href="#skills" class="nav__link">Skills</a>
+        </li>
+        <li class="nav__item">
+          <a href="#projects" class="nav__link">Projects</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contact" class="nav__link">Contact me</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
   <header class="header__container">
     <div class="header">
@@ -56,6 +77,7 @@
   </header>
 
   <section class="intro">
+    <a name="intro"></a>
     <div class="intro__container">
       <h2 class="intro__title">Hello there!</h2>
       <div class="intro__text--container">
@@ -71,6 +93,7 @@
   </section>
 
   <section class="skills__container">
+    <a name="skills"></a>
     <div class="skills">
       <h2 class="skills__title">Skills</h2>
       <div class="info-cards">
@@ -101,6 +124,7 @@
 
   <!-- Potential new class name = featured-projects__container -->
   <section class="projects__container"> 
+    <a name="projects"></a>
     <!-- Potential new class name = featured-projects -->
     <div class="projects">
       <h2>Projects</h2>
@@ -127,6 +151,7 @@
   </section>
 
   <footer class="footer">
+    <a name="contact"></a>
     <div class="footer__content">
       <div class="footer__social">
         <div class="footer__social-text">

@@ -1,0 +1,134 @@
+.nav {
+  // Needed for checkbox hack, is hidden
+  &__checkbox {
+    display: none;
+  }
+
+  // Forms the button (applied to label linked to checkbox)
+  &__button {
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 1rem 3rem rgba($colour-black, .1);
+    cursor: pointer;
+    height: 7rem;
+    position: fixed;
+    right: 6rem;
+    // Aligns the icon
+    text-align: center;
+    top: 6rem;
+    width: 7rem;    
+    z-index: 2000;
+  }
+
+  // Background linked to empty div
+  &__background {
+    border-radius: 50%;
+    background-image: radial-gradient($colour-secondary, $colour-primary);
+    height: 6rem;
+    position: fixed;
+    right: 6.5rem;
+    top: 6.5rem;
+    transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+    width: 6rem; 
+    z-index: 1000;
+  }
+
+  &__navigation {
+    height: 100vh;
+    left: 0;
+    // Ensures nav isn't visible by default
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    // Necessary so the links aren't clickable when the nav isn't visible
+    width: 30%;
+    z-index: 1500;
+  }
+
+  // The list that contains the navigation items
+  &__list {
+    left: 50%;
+    list-style: none;
+    opacity: 1;
+    position: absolute;
+    text-align: center;
+    // Adjusts to the exact centre
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 100%;
+  }
+
+  // Navigation items
+  &__item {
+    margin: 1rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      border-radius: 7px;
+      color: $colour-dark;
+      display: inline-block;
+      font-size: 3rem;
+      font-weight: 300;
+      font-family: 'Roboto', sans-serif;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all .4s;
+    }
+
+    &:hover,
+    &:active {
+      background-color: rgba($colour-black, .1);
+      color: white;
+      transform: scale(1.1);
+    }
+  }
+
+  // Checkbox hack - looks for checkbox checked and adjusts the background and list elements
+  &__checkbox:checked ~ &__background {
+    transform: scale(80);
+  }
+
+  &__checkbox:checked ~ &__navigation {
+    opacity: 1;
+    width: 100%;
+  }
+
+  // Icon for nav button
+  &__icon {
+    position: relative;
+    margin-top: 3.5rem;
+
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 2px;
+      background-color: $colour-dark;
+      display: inline-block;
+      transition: all .2s;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+
+    &::before {
+      top: -.8rem;
+    }
+
+    &::after {
+      top: .8rem;
+    }
+  }
+
+  // Lines on icon to move out slightly on hover
+  &__button:hover &__icon::before { top: -1rem;}
+  &__button:hover &__icon::after { top: 1rem;}
+}
