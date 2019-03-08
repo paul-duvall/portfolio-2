@@ -468,6 +468,12 @@ a:link, a:visited {
       width: 100%;
       z-index: -1; } }
 
+.about-me {
+  margin: 1.8rem; }
+  .about-me__container {
+    max-width: 75rem;
+    margin: 0 auto; }
+
 .header__container {
   background-image: linear-gradient(to left top, #83D8EA, #F0E690);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
@@ -589,8 +595,8 @@ a:link, a:visited {
   .header__image img {
     height: 40rem; } }
 
-.about-me {
+.skills-intro {
   margin: 1.8rem; }
-  .about-me__container {
+  .skills-intro__container {
     max-width: 75rem;
     margin: 0 auto; }
