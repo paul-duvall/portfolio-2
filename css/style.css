@@ -590,3 +590,6 @@ a:link, a:visited {
 
 .about-me {
   margin: 1.8rem; }
+  .about-me__container {
+    max-width: 75rem;
+    margin: 0 auto; }
