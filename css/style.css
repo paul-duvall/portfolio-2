@@ -345,8 +345,9 @@ a:link, a:visited {
   .projects__card:hover p {
     transform: translateY(-20rem); }
   .projects__card a {
-    transition: all .2s linear;
-    margin-top: 1.5rem; }
+    color: white;
+    margin-top: 1.5rem;
+    transition: all .2s linear; }
   .projects__card:hover a {
     transform: translateY(-20rem); }
 
