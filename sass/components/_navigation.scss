@@ -12,10 +12,10 @@
     cursor: pointer;
     height: 7rem;
     position: fixed;
-    right: 6rem;
+    right: 2rem;
     // Aligns the icon
     text-align: center;
-    top: 6rem;
+    top: 2rem;
     width: 7rem;    
     z-index: 2000;
   }
@@ -26,8 +26,8 @@
     background-image: radial-gradient($colour-secondary, $colour-primary);
     height: 6rem;
     position: fixed;
-    right: 6.5rem;
-    top: 6.5rem;
+    right: 2.5rem;
+    top: 2.5rem;
     transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
     width: 6rem; 
     z-index: 1000;
@@ -131,4 +131,18 @@
   // Lines on icon to move out slightly on hover
   &__button:hover &__icon::before { top: -1rem;}
   &__button:hover &__icon::after { top: 1rem;}
+}
+
+@media only screen and (min-width: 1000px) {
+  .nav {
+    &__button {
+      right: 6rem;
+      top: 6rem;
+    }
+  
+    &__background {
+      right: 6.5rem;
+      top: 6.5rem;
+    }
+  }
 }
