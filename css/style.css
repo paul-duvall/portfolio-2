@@ -417,12 +417,12 @@ a:link, a:visited {
     display: flex;
     justify-content: center; }
 
-.projects {
+.featured-projects {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 110rem; }
-  .projects__container {
+  .featured-projects__container {
     display: flex;
     justify-content: center; }
 
@@ -469,8 +469,16 @@ a:link, a:visited {
       z-index: -1; } }
 
 .about-me {
+  padding-top: 3.5rem;
   margin: 1.8rem; }
   .about-me__container {
+    max-width: 75rem;
+    margin: 0 auto; }
+
+.contact-me {
+  padding-top: 3.5rem;
+  margin: 1.8rem; }
+  .contact-me__container {
     max-width: 75rem;
     margin: 0 auto; }
 
@@ -595,7 +603,15 @@ a:link, a:visited {
   .header__image img {
     height: 40rem; } }
 
+.projects-header {
+  padding-top: 3.5rem;
+  margin: 1.8rem; }
+  .projects-header__container {
+    max-width: 75rem;
+    margin: 0 auto; }
+
 .skills-intro {
+  padding-top: 3.5rem;
   margin: 1.8rem; }
   .skills-intro__container {
     max-width: 75rem;
