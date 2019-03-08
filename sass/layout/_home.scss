@@ -51,7 +51,7 @@
 }
 
 .intro {
-  margin: 1.8rem;
+  margin: $margin-regular;
 }
 
 .skills {
@@ -135,9 +135,7 @@
       }
     }
   }
-}
 
-@media only screen and (min-width: 1000px) {
   .skills {
     display: flex;
     flex-direction: column;
