@@ -443,9 +443,7 @@ a:link, a:visited {
     .header__text--name-letter {
       font-size: 8rem; }
     .header__image img {
-      height: 45rem; } }
-
-@media only screen and (min-width: 1000px) {
+      height: 45rem; }
   .skills {
     display: flex;
     flex-direction: column;
