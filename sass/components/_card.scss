@@ -8,6 +8,7 @@
 .info-card {
   @include box-shadow;
   margin: 3rem;
+  margin-top: 5.5rem;
   width: 300px;
   background: white;
   border-radius: 10px;
@@ -46,12 +47,12 @@
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
   .info-cards {
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 3rem;
+    padding-top: 2rem;
   }
 }

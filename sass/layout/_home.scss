@@ -7,6 +7,7 @@
   &__container {
     display: flex;
     justify-content: center;
+    height: 85rem;
   }
 
   &__image { 
@@ -44,9 +45,8 @@
 
   &__btn {
     height: 5rem;
-    margin: 1rem;
+    margin: 1.5rem auto;
     text-align: center;
-    margin: 0 auto;
   }
 }
 
@@ -60,12 +60,12 @@
   flex-direction: column;
   max-width: 110rem;
   min-width: 95vw;
-  margin: 5rem;
 
   &__container {
     padding-top: 15rem;
     display: flex;
     justify-content: center;
+    height: 145rem;
   }
 }
 
@@ -81,11 +81,41 @@
   }
 }
 
+@media only screen and (min-width: 800px) {
+  .skills {
+    &__container {   
+      height: 170rem;
+    }
+  }
 
-@media only screen and (min-width: 1000px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    max-width: 110rem;
+  
+    &__container {
+      display: flex;
+      height: 155rem;
+      justify-content: center;
+      margin-top: -27rem;
+      padding-top: 27rem;
+      position: relative;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
   .header {   
     display: flex;
     flex-direction: row;
+
+    &__container {
+      height: 20rem;
+    }
 
     &__image-container {
       height: 100%;
@@ -134,23 +164,5 @@
         height: 45rem;
       }
     }
-  }
-
-  .skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    max-width: 110rem;
-  
-    &__container {
-      margin-top: -27rem;
-      padding-top: 27rem;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      z-index: -1;
-    }
-  }
+  }  
 }

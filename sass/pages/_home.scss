@@ -6,8 +6,6 @@
   );
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-  height: 85rem;
-  // position: absolute;
 }
 
 .header {  
@@ -15,13 +13,19 @@
     &--subtitle-top,
     &--subtitle-bottom {
       text-align: center;
+      font-weight: 300;
     }
 
     &--name-letter {
-      text-align: center;
-      padding: .2rem .5rem;
-      margin: .2rem;
+      border-radius: 3px;
+      box-shadow: 1rem 1rem 4rem rgba($colour-dark, .3),
+      1rem 1rem 2rem rgba($colour-dark, .5);
       font-size: 3rem;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      margin: .2rem;
+      padding: .2rem .5rem;
+      text-align: center;
     }
 
     &--name-letter1 {
@@ -121,15 +125,18 @@
     );
     -webkit-clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 94%);
     clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 94%);
-    height: 142rem;
   }
 }
 
-@media only screen and (min-width: 700px) {
-  .header {    
+
+
+@media only screen and (min-width: 800px) {
+  .header {   
     &__text {
       &--name-letter {
         font-size: 4rem;
+        box-shadow: 1rem 1rem 2rem rgba($colour-dark, .3),
+                    1rem 1rem 1rem rgba($colour-dark, .5);
       }
     }
 
@@ -138,6 +145,10 @@
         height: 28rem;
       }
     }
+  }
+
+  .header__container {
+    height: 95rem;
   }
 
   .intro {
@@ -160,7 +171,7 @@
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
   .skills {
     &__container {
       -webkit-clip-path: polygon(0 16%, 100% 5%, 100% 100%, 0 90%);
@@ -173,6 +184,12 @@
     &__text {
       &--name-letter {
         font-size: 8rem;
+        min-width: 8rem;
+      }
+
+      &--subtitle-top,
+      &--subtitle-bottom {
+        font-size: 4rem;
       }
     }
 
