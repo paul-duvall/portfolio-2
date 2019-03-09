@@ -131,6 +131,21 @@
   // Lines on icon to move out slightly on hover
   &__button:hover &__icon::before { top: -1rem;}
   &__button:hover &__icon::after { top: 1rem;}
+
+  // When checkbox checked, looks for child of sibling (&__icon)
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__button &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  &__checkbox:checked + &__button &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
 }
 
 @media only screen and (min-width: 1000px) {

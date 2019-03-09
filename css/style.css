@@ -294,6 +294,17 @@ a:link, a:visited {
 .nav__button:hover .nav__icon::after {
   top: 1rem; }
 
+.nav__checkbox:checked + .nav__button .nav__icon {
+  background-color: transparent; }
+
+.nav__checkbox:checked + .nav__button .nav__icon::before {
+  top: 0;
+  transform: rotate(135deg); }
+
+.nav__checkbox:checked + .nav__button .nav__icon::after {
+  top: 0;
+  transform: rotate(-135deg); }
+
 @media only screen and (min-width: 1000px) {
   .nav__button {
     right: 6rem;
