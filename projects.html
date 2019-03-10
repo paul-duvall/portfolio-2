@@ -57,7 +57,7 @@
           <div class="projects__card-overlay"></div>
           <h3>Claude's Restaurant</h3>
           <p>A multi-page brochure site for a fictional restaurant. Fully responsive; uses HTML5, CSS, a smattering of JavaScript / jQuery.</p>
-          <a href="#" class="btn btn--outline">Find out more</a>
+          <a href="#popup1" class="btn btn--outline">Find out more</a>
         </div>
         
         <div class="projects__card">
@@ -66,7 +66,7 @@
           <h3>devLearn</h3>
           <p>An overly-ambitious web application for users learning web development.</p>
           <p>Built using Bootstrap and JavaScript.</p>
-          <a href="#" class="btn btn--outline">Find out more</a>
+          <a href="#popup2" class="btn btn--outline">Find out more</a>
         </div>
 
       </div>
@@ -130,6 +130,42 @@
       </p>
     </div>
   </footer>
+
+    <!-- Claude's popup -->
+
+    <div class="popup" id="popup1">
+        <div class="popup__content">
+          <a href="#featured-projects" class="popup__close">&times;</a>
+          <div class="popup__image-container">
+              <img src="./images/project-claudes.jpg" alt="" class="popup__image">
+          </div>
+          
+          <h3>Claude's Restaurant</h3>
+          <p>A multi-page brochure site for a fictional restaurant. This site has been made fully responsive using media queries. Built with HTML5, CSS, it also includes a some JavaScript and jQuery, including for the menus component.</p>
+          <div class="popup__buttons">
+              <a href="https://wonderful-wilson-e250a9.netlify.com/" class="btn btn--dark" target="_blank">View project</a>
+              <a href="https://github.com/paul-duvall/Claudes-restaurant" class="btn btn--dark" target="_blank">View code</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- devLearn popup -->
+    
+      <div class="popup" id="popup2">
+          <div class="popup__content">
+            <a href="#featured-projects" class="popup__close">&times;</a>
+            <div class="popup__image-container">
+                <img src="./images/project-devlearn.jpg" alt="" class="popup__image">
+            </div>
+            
+            <h3>devLearn</h3>
+            <p>A web application for users learning web development. An ongoing project that will ultimately allow users to maintain individual task lists for different projects. Built using Bootstrap and JavaScript.</p>
+            <div class="popup__buttons">
+                <a href="https://wonderful-wilson-e250a9.netlify.com/" class="btn btn--dark" target="_blank">View project</a>
+                <a href="https://github.com/paul-duvall/devlearn" class="btn btn--dark" target="_blank">View code</a>
+            </div>
+          </div>
+        </div>
   
 </body>
 </html>
