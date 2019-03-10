@@ -1,0 +1,95 @@
+.popup {
+  background-color: rgba(black, .8);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3000;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
+  
+  &__content {
+    max-width: 50rem;
+    width: 90%;
+    background-color: white;
+    box-shadow: 0 2rem 4rem rgba(black, .2);
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      @include card-text;
+      padding: 1.5rem;
+    }
+  }
+
+  &__image-container {
+    border: 1px solid grey;
+    border-radius: 3px;
+    width: 75%;
+    max-width: 30rem;
+    margin: 1.5rem 0;
+  }
+  
+  &__image {
+    width: 100%;
+  }
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__close {
+    &:link,
+    &:visited {
+      color: grey;
+      position: absolute;
+      top: .5rem;
+      right: 1.5rem;
+      font-size: 4rem;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    &:hover {
+      color: $colour-primary;
+    }
+  }
+
+  &__buttons {
+    height: 5rem;
+  }
+
+  .btn {
+    margin:.5rem;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .popup {
+    &__content {
+      max-width: 80rem;
+    }
+
+    p {
+      max-width: 80%;
+      padding-bottom: 3rem;
+    }
+
+    
+
+    .btn {
+      margin: 1.5rem;
+    }
+  }
+}
