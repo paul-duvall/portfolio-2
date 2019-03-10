@@ -28,6 +28,18 @@
     }
   }
 
+  &--dark {
+    // background-color: $colour-highlight;
+    padding: 1rem 1.5rem;
+    border: 2px solid $colour-dark;
+
+    &:hover {
+      background-color: darken($colour-dark, 10%);
+      box-shadow: 0 .25rem 1rem rgba($colour-black, 0.16);
+      color: white;
+    }
+  }
+
   // Outline button for secondary use
   &--outline {
     border: 2px solid $colour-highlight;
