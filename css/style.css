@@ -172,7 +172,7 @@ a:link, a:visited {
   .footer__contact-form label {
     visibility: hidden;
     font-size: 0; }
-  .footer__contact-form input:not(:last-child),
+  .footer__contact-form div input:not(:last-child),
   .footer__contact-form textarea {
     border: none;
     border-radius: 6px;
@@ -182,7 +182,7 @@ a:link, a:visited {
     padding: .5rem;
     background: #5E5E5D;
     max-width: 40rem; }
-  .footer__contact-form input::placeholder,
+  .footer__contact-form div input::placeholder,
   .footer__contact-form textarea::placeholder {
     color: white; }
   .footer__contact-form textarea::placeholder {

@@ -70,7 +70,7 @@
     }
 
     // Form form input fields
-    input:not(:last-child),
+    div input:not(:last-child),
     textarea {
       border: none;
       border-radius: 6px;
@@ -83,7 +83,7 @@
     }
 
     // Set form field placeholder text to white
-    input::placeholder,
+    div input::placeholder,
     textarea::placeholder {
       color: white;
     }
