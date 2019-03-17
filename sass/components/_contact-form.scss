@@ -1,0 +1,52 @@
+// Container form form section
+.contact {
+  width: 95%;
+  max-width: 40rem;
+  padding-bottom: 2.5rem;
+}
+
+// The actual form element
+.contact-form {
+  label {
+    visibility: hidden;
+    font-size: 0;
+  }
+
+  // Form form input fields
+  div input:not(:last-child) {
+    border: none;
+    border-radius: 6px;
+    color: white;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    background: $colour-grey;
+    max-width: 40rem;
+  }
+
+  textarea {
+    border: none;
+    border-radius: 6px;
+    color: white;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    background: $colour-grey;
+    max-width: 40rem;
+  }
+
+  // Set form field placeholder text to white
+  div input::placeholder,
+  textarea::placeholder {
+    color: white;
+  }
+
+  // Set form textarea field placeholder font
+  textarea::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  &__btn {
+    text-align: right;
+  }
+}
