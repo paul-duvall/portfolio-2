@@ -7,24 +7,6 @@
 
 // The actual form element
 .contact-form {
-  label {
-    visibility: hidden;
-    font-size: 0;
-  }
-
-  
-
-  // Form form input fields
-  div input:not(:last-child) {
-    border: none;
-    border-radius: 6px;
-    color: white;
-    width: 100%;
-    margin-bottom: 1rem;
-    padding: .5rem;
-    background: $colour-grey;
-    max-width: 40rem;
-  }
 
   textarea {
     border: none;
@@ -38,7 +20,7 @@
   }
 
   // Set form field placeholder text to white
-  div input::placeholder,
+  input::placeholder,
   textarea::placeholder {
     color: white;
   }
@@ -56,7 +38,6 @@
 #name, #email, #phone {
   border: none;
   border-radius: 6px;
-  color: white;
   width: 100%;
   margin-bottom: 1rem;
   padding: .5rem;

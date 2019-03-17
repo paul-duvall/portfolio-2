@@ -132,20 +132,6 @@ a:link, a:visited {
   max-width: 40rem;
   padding-bottom: 2.5rem; }
 
-.contact-form label {
-  visibility: hidden;
-  font-size: 0; }
-
-.contact-form div input:not(:last-child) {
-  border: none;
-  border-radius: 6px;
-  color: white;
-  width: 100%;
-  margin-bottom: 1rem;
-  padding: .5rem;
-  background: #5E5E5D;
-  max-width: 40rem; }
-
 .contact-form textarea {
   border: none;
   border-radius: 6px;
@@ -156,7 +142,7 @@ a:link, a:visited {
   background: #5E5E5D;
   max-width: 40rem; }
 
-.contact-form div input::placeholder,
+.contact-form input::placeholder,
 .contact-form textarea::placeholder {
   color: white; }
 
@@ -169,7 +155,6 @@ a:link, a:visited {
 #name, #email, #phone {
   border: none;
   border-radius: 6px;
-  color: white;
   width: 100%;
   margin-bottom: 1rem;
   padding: .5rem;
