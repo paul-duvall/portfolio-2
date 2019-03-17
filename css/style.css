@@ -172,7 +172,15 @@ a:link, a:visited {
   .footer__contact-form label {
     visibility: hidden;
     font-size: 0; }
-  .footer__contact-form div input:not(:last-child),
+  .footer__contact-form div input:not(:last-child) {
+    border: none;
+    border-radius: 6px;
+    color: white;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    background: #5E5E5D;
+    max-width: 40rem; }
   .footer__contact-form textarea {
     border: none;
     border-radius: 6px;
