@@ -7,3 +7,21 @@
     margin: 0 auto;
   }
 }
+
+.projects-main {
+  
+
+  &__container {
+    background-image: linear-gradient(
+      to left top,
+      $colour-primary,
+      $colour-secondary
+    );
+
+    // -webkit-clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 94%);
+    // clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 94%);
+    
+
+      
+  }
+}
