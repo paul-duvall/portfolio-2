@@ -31,4 +31,80 @@
     -webkit-clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 94%);
     clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 94%);  
   }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .projects-header {
+    padding-top: 3.5rem;
+    margin: $margin-regular;
+    
+    &__text {
+      max-width: 50%;
+      margin: 0;
+    }
+  }
+  
+  .projects-main {
+    // Ensures cards sit next to each other on larger viewports
+    &__cards {
+      display: grid;
+      grid-template-columns: 5rem 30rem 7rem 30rem 5rem;
+      grid-template-rows: repeat(4, 18rem);
+    }
+
+    &__card {
+      margin: 0;
+    }
+
+    &__background {
+      height: 80rem;
+    }
+  }
+
+  .projects-main__container {
+    height: 50rem;
+  }
+
+  .projects {
+    &__card1 {
+      grid-column: 4;
+      grid-row: 1;
+    }
+
+    &__card2 {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    &__card3 {
+      grid-column: 4;
+      grid-row: 3;
+    }
+
+    &__card4 {
+      grid-column: 2;
+      grid-row: 4;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .projects-header {
+    &__text {
+        max-width: 70%;
+        margin: 0;
+    }
+  }
+  
+  .projects-main {
+    &__cards {
+      grid-template-columns: 5rem 30rem 12rem 30rem 5rem;
+    }
+  }
 }
