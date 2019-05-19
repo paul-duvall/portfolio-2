@@ -526,12 +526,10 @@ a:link, a:visited {
     margin-top: 4rem; }
 
 @media only screen and (min-width: 800px) {
-  .skills__container {
-    height: 170rem; }
   .skills {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-items: center;
     max-width: 110rem; }
     .skills__container {
@@ -743,8 +741,8 @@ a:link, a:visited {
   .projects-main__background {
     height: 125rem;
     background-image: linear-gradient(to left top, #83D8EA, #F0E690);
-    -webkit-clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 94%);
-    clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 94%); }
+    -webkit-clip-path: polygon(100% 5%, 0 11%, 0 94%, 100% 100%);
+    clip-path: polygon(100% 5%, 0 11%, 0 94%, 100% 100%); }
   .projects-main__cards {
     display: flex;
     flex-direction: column;
@@ -764,9 +762,9 @@ a:link, a:visited {
   .projects-main__card {
     margin: 0; }
   .projects-main__background {
-    height: 80rem; }
+    height: 93rem; }
   .projects-main__container {
-    height: 50rem; }
+    height: 60rem; }
   .projects__card1 {
     grid-column: 4;
     grid-row: 1; }
@@ -778,7 +776,11 @@ a:link, a:visited {
     grid-row: 3; }
   .projects__card4 {
     grid-column: 2;
-    grid-row: 4; } }
+    grid-row: 4; }
+  .projects__card5 {
+    top: -6rem;
+    grid-column: 4;
+    grid-row: 5; } }
 
 @media only screen and (min-width: 1000px) {
   .projects-header__text {

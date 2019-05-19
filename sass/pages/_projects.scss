@@ -34,8 +34,8 @@
       $colour-primary,
       $colour-secondary
     );
-    -webkit-clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 94%);
-    clip-path: polygon(0 11%, 100% 5%, 100% 100%, 0 94%);  
+    -webkit-clip-path: polygon(100% 5%, 0 11%, 0 94%, 100% 100%);
+    clip-path: polygon(100% 5%, 0 11%, 0 94%, 100% 100%);  
   }
 
   &__cards {
@@ -69,12 +69,12 @@
     }
 
     &__background {
-      height: 80rem;
+      height: 93rem;
     }
   }
 
   .projects-main__container {
-    height: 50rem;
+    height: 60rem;
   }
 
   .projects {
@@ -96,6 +96,12 @@
     &__card4 {
       grid-column: 2;
       grid-row: 4;
+    }
+
+    &__card5 {
+      top: -6rem;
+      grid-column: 4;
+      grid-row: 5;
     }
   }
 }
