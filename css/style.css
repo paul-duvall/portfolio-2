@@ -423,16 +423,16 @@ a:link, a:visited {
   .projects__card:hover .projects__card-overlay {
     background: rgba(0, 0, 0, 0.5); }
   .projects__card img {
-    width: 300px;
+    width: 400px;
     transition: all .2s linear; }
   .projects__card:hover img {
     transform: scale(1.1); }
   .projects__card h3 {
     color: white;
-    transform: translateY(-32rem);
+    transform: translateY(-38rem);
     transition: all .2s linear; }
   .projects__card:hover h3 {
-    transform: translateY(-21rem); }
+    transform: translateY(-28rem); }
   .projects__card p {
     font-size: 1.4rem;
     line-height: 2.2rem;
@@ -440,13 +440,13 @@ a:link, a:visited {
     transition: all .2s linear;
     width: 90%; }
   .projects__card:hover p {
-    transform: translateY(-20rem); }
+    transform: translateY(-27rem); }
   .projects__card a {
     color: white;
     margin-top: 1.5rem;
     transition: all .2s linear; }
   .projects__card:hover a {
-    transform: translateY(-20rem); }
+    transform: translateY(-27rem); }
 
 .projects__card-overlay {
   position: absolute;
