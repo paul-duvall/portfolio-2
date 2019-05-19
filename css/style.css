@@ -721,6 +721,10 @@ a:link, a:visited {
 .projects-header {
   padding-top: 3.5rem;
   margin: 1.8rem; }
+  .projects-header h1 {
+    font-size: 4rem;
+    text-align: left;
+    margin-bottom: 1.5rem; }
   .projects-header__container {
     max-width: 75rem;
     margin: 0 auto; }
