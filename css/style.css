@@ -1,3 +1,50 @@
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade-from-left {
+  from {
+    opacity: 0;
+    transform: translateX(-4rem); }
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes fade-from-right {
+  from {
+    opacity: 0;
+    transform: translateX(4rem); }
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.header__text--subtitle-top {
+  opacity: 0;
+  animation: fade-from-left ease 3s forwards; }
+
+.header__text--subtitle-bottom {
+  opacity: 0;
+  animation: fade-from-right ease 3s forwards; }
+
+.header__text--name-first, .header__text--name-second, .header__image {
+  opacity: 0;
+  animation: fade-in ease 1.5s forwards;
+  animation-duration: 3s; }
+
+.header__btn--contact {
+  opacity: 0;
+  animation: fade-in ease forwards;
+  animation-delay: 2s;
+  animation-duration: 2s; }
+
+.header__btn--cv {
+  opacity: 0;
+  animation: fade-in ease forwards;
+  animation-delay: 2.4s;
+  animation-duration: 2s; }
+
 *,
 *::before,
 *::after {
