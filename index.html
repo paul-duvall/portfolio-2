@@ -7,6 +7,7 @@
   <title>PJD Web Design</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -78,8 +79,8 @@
 
   <section class="intro">
     <div class="intro__container">
-      <h2>Hello there!</h2>
-      <div class="intro__text--container">
+      <h2 data-aos="fade-up">Hello there!</h2>
+      <div class="intro__text--container" data-aos="fade-up">
         <div class="intro__text--text_box">
           <p>Welcome to my portfolio site - thanks for popping by! I'm Paul Duvall, a self-taught web developer based in Norwich, Norfolk. I've been working hard, learning a range of technologies that will enable me to produce visually-appealing, responsive web pages and applications.</p>
           <div class="owl-icon__container">
@@ -93,23 +94,23 @@
 
   <section class="skills__container">
     <div class="skills">
-      <h2 class="skills__title">Skills</h2>
+      <h2 class="skills__title" data-aos="fade-up">Skills</h2>
       <div class="info-cards">
-        <div class="info-card">
+        <div class="info-card" data-aos="fade-up">
           <div class="info-card__image">
             <img src="images/iconmonstr-paintbrush-6.svg" alt="Design - paintbush">
           </div>
           <h3>Design</h3>
           <p>Visual design in web development is vital to ensure a quality user-experience. I use Adobe XD to prototype my projects, ensuring effective UI, with careful consideration of accessibility issues.</p>
         </div>
-        <div class="info-card">
+        <div class="info-card" data-aos="fade-up">
           <div class="info-card__image">
             <img src="images/iconmonstr-laptop-4.svg" alt="Create - laptop">
           </div>
           <h3>Create</h3>
           <p>Having developed a confident understanding of HTML and CSS fundamentals, along with an ever-increasing awareness of JavaScript, I have turned my attention to other tools, such as webpack, React and SASS.</p>
         </div>
-        <div class="info-card">
+        <div class="info-card" data-aos="fade-up">
           <div class="info-card__image">
               <img src="images/iconmonstr-pen-17.svg" alt="Write - pen">
           </div>
@@ -122,9 +123,9 @@
 
   <section class="featured-projects__container"> 
     <div class="featured-projects" id="featured-projects">
-      <h2>Featured projects</h2>
+      <h2 data-aos="fade-up">Featured projects</h2>
       <div class="projects__cards">
-        <div class="projects__card">
+        <div class="projects__card" data-aos="zoom-in">
           <img src="./images/project-claudes.jpg" alt="Claudes restaurant project">
           <div class="projects__card-overlay"></div>
           <h3>Claude's Restaurant</h3>
@@ -132,7 +133,7 @@
           <a href="#popup1" class="btn btn--outline">Find out more</a>
         </div>
         
-        <div class="projects__card">
+        <div class="projects__card" data-aos="zoom-in">
           <img src="./images/project-devlearn.jpg" alt="devLearn project">
           <div class="projects__card-overlay"></div>
           <h3>devLearn</h3>
@@ -141,7 +142,7 @@
           <a href="#popup2" class="btn btn--outline">Find out more</a>
         </div>
       </div>
-      <a href="projects.html" class="btn btn--dark" >More projects</a>
+      <a href="projects.html" class="btn btn--dark" data-aos="fade-up">More projects</a>
     </div>
   </section>
 
@@ -241,6 +242,7 @@
       </div>
     </div>
 
-
-</body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
