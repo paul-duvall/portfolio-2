@@ -776,7 +776,7 @@ a:link, a:visited {
 
 .projects-main__container {
   margin-bottom: 50rem;
-  height: 100rem;
+  height: 120rem;
   position: relative; }
 
 .projects-main {
@@ -786,7 +786,7 @@ a:link, a:visited {
   left: 50%;
   transform: translate(-50%, 0); }
   .projects-main__background {
-    height: 125rem;
+    height: 160rem;
     background-image: linear-gradient(to left top, #83D8EA, #F0E690);
     -webkit-clip-path: polygon(100% 5%, 0 11%, 0 94%, 100% 100%);
     clip-path: polygon(100% 5%, 0 11%, 0 94%, 100% 100%); }
