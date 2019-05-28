@@ -36,14 +36,14 @@
 .header__btn--contact {
   opacity: 0;
   animation: fade-in ease forwards;
-  animation-delay: 2s;
-  animation-duration: 2s; }
+  animation-delay: 1.5s;
+  animation-duration: 1.8s; }
 
 .header__btn--cv {
   opacity: 0;
   animation: fade-in ease forwards;
-  animation-delay: 2.4s;
-  animation-duration: 2s; }
+  animation-delay: 2s;
+  animation-duration: 1.8s; }
 
 *,
 *::before,
