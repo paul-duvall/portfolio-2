@@ -494,6 +494,9 @@ a:link, a:visited {
     transition: all .2s linear; }
   .projects__card:hover a {
     transform: translateY(-27rem); }
+  .projects__card--secondary {
+    height: 23rem;
+    width: 23rem; }
 
 .projects__card-overlay {
   position: absolute;

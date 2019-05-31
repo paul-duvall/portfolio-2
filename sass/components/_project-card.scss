@@ -68,6 +68,11 @@
     &:hover a {
       transform: translateY(-27rem);
     }
+
+    &--secondary {
+      height: 23rem;
+      width: 23rem;
+    }
   }
 
   // Positions the overlay over the main card content
