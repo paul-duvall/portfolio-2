@@ -812,6 +812,9 @@ a:link, a:visited {
     flex-wrap: wrap;
     max-width: 100rem; }
 
+.projects-secondary + .projects-secondary {
+  padding-top: 3rem; }
+
 @media only screen and (min-width: 800px) {
   .projects-header {
     padding-top: 3.5rem;
