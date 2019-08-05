@@ -43,7 +43,7 @@
 
     // Makes text visible on hover
     &:hover h3 {
-      transform: translateY(-28rem);
+      transform: translateY(-26rem);
     }
 
     p {
@@ -55,7 +55,7 @@
 
     // Makes paragraph visible on hover
     &:hover p {
-      transform: translateY(-27rem);
+      transform: translateY(-26rem);
     }
 
     a {
@@ -70,9 +70,9 @@
     }
 
     &--secondary {
-      height: 23rem;
-      width: 23rem;
-      margin: 1rem;
+      // height: 23rem;
+      // width: 23rem;
+      // margin: 1rem;
     }
   }
 
@@ -83,6 +83,28 @@
     width: 30rem;
     top: 0;
     transition: all .2s linear;
+  }
+}
+
+.projects__card--secondary {
+  height: 23rem;
+  width: 23rem;
+  margin: 1rem;
+
+  // Makes paragraph visible on hover
+  &:hover p {
+    transform: translateY(-28rem);
+  }
+
+  // a {
+  //   color: white;
+  //   margin-top: 1.5rem;
+  //   transition: all .2s linear;
+  // }
+
+  // Makes button visible on hover
+  &:hover a {
+    transform: translateY(-29.5rem);
   }
 }
 
