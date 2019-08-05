@@ -479,7 +479,7 @@ a:link, a:visited {
     transform: translateY(-38rem);
     transition: all .2s linear; }
   .projects__card:hover h3 {
-    transform: translateY(-28rem); }
+    transform: translateY(-26rem); }
   .projects__card p {
     font-size: 1.4rem;
     line-height: 2.2rem;
@@ -487,7 +487,7 @@ a:link, a:visited {
     transition: all .2s linear;
     width: 90%; }
   .projects__card:hover p {
-    transform: translateY(-27rem); }
+    transform: translateY(-26rem); }
   .projects__card a {
     color: white;
     margin-top: 1.5rem;
